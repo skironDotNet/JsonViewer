@@ -22,7 +22,9 @@ namespace EPocalipse.Json.JsonView
             this.labelVersion.Text = String.Format("Version {0}", AssemblyVersion);
             this.labelCopyright.Text = AssemblyCopyright;
             this.labelCompanyName.Text = AssemblyCompany;
-            this.textBoxDescription.Text = AssemblyDescription;
+            this.textBoxDescription.Text = AssemblyDescription + Environment.NewLine + Environment.NewLine +
+                "Additional changes in 2014 by Pawel Cioch on GitHub " + Environment.NewLine + 
+                "https://github.com/skironDotNet/JsonViewer";
         }
 
         #region Assembly Attribute Accessors

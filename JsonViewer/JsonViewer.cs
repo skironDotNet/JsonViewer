@@ -684,6 +684,11 @@ namespace EPocalipse.Json.Viewer
                 Redraw();
             }
         }
+
+        private void btnFindNext_Click(object sender, EventArgs e)
+        {
+            FindNext(false, true);
+        }
     }
 
     public struct ErrorDetails
