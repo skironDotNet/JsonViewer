@@ -147,10 +147,10 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="array.bmp" />
-    <Content Include="close.png" />
-    <Content Include="next.png" />
-    <Content Include="obj.bmp" />
+    <None Include="array.bmp" />
+    <None Include="close.png" />
+    <None Include="next.png" />
+    <None Include="obj.bmp" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
