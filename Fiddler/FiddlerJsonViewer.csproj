@@ -96,6 +96,9 @@
       <Install>true</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Read before build.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>xcopy /Y/C  $(TargetDir)*.* "%25ProgramFiles(x86)%25\Fiddler2\Inspectors"</PostBuildEvent>

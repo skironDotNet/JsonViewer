@@ -1,0 +1,2 @@
+﻿If you have not found Fiddler reference. You must install Fiddler2 and add exe file as refrence,
+as of today in 64 bit system it would be c:\Program Files (x86)\Fiddler2\Fiddler.exe
