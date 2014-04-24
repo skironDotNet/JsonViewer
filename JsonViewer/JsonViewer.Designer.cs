@@ -40,11 +40,6 @@ namespace EPocalipse.Json.Viewer
             this.mnuCopyName = new System.Windows.Forms.ToolStripMenuItem();
             this.mnuCopyValue = new System.Windows.Forms.ToolStripMenuItem();
             this.imgList = new System.Windows.Forms.ImageList(this.components);
-            this.pnlFind = new System.Windows.Forms.Panel();
-            this.btnFindNext = new System.Windows.Forms.Button();
-            this.btnCloseFind = new System.Windows.Forms.Button();
-            this.txtFind = new System.Windows.Forms.TextBox();
-            this.lblFind = new System.Windows.Forms.Label();
             this.pnlVisualizer = new System.Windows.Forms.Panel();
             this.mnuVisualizerPnl = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.mnuShowOnRight = new System.Windows.Forms.ToolStripMenuItem();
@@ -70,16 +65,21 @@ namespace EPocalipse.Json.Viewer
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.backgroundWorker2 = new System.ComponentModel.BackgroundWorker();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.pnlFind = new System.Windows.Forms.Panel();
+            this.btnFindNext = new System.Windows.Forms.Button();
+            this.btnCloseFind = new System.Windows.Forms.Button();
+            this.txtFind = new System.Windows.Forms.TextBox();
+            this.lblFind = new System.Windows.Forms.Label();
             this.spcViewer.Panel1.SuspendLayout();
             this.spcViewer.Panel2.SuspendLayout();
             this.spcViewer.SuspendLayout();
             this.mnuTree.SuspendLayout();
-            this.pnlFind.SuspendLayout();
             this.mnuVisualizerPnl.SuspendLayout();
             this.tabControl.SuspendLayout();
             this.pageTreeView.SuspendLayout();
             this.pageTextView.SuspendLayout();
             this.toolStrip1.SuspendLayout();
+            this.pnlFind.SuspendLayout();
             this.SuspendLayout();
             // 
             // spcViewer
@@ -91,13 +91,12 @@ namespace EPocalipse.Json.Viewer
             // spcViewer.Panel1
             // 
             this.spcViewer.Panel1.Controls.Add(this.tvJson);
-            this.spcViewer.Panel1.Controls.Add(this.pnlFind);
             // 
             // spcViewer.Panel2
             // 
             this.spcViewer.Panel2.Controls.Add(this.pnlVisualizer);
             this.spcViewer.Panel2.Controls.Add(this.cbVisualizers);
-            this.spcViewer.Size = new System.Drawing.Size(778, 572);
+            this.spcViewer.Size = new System.Drawing.Size(778, 540);
             this.spcViewer.SplitterDistance = 552;
             this.spcViewer.TabIndex = 5;
             // 
@@ -181,80 +180,13 @@ namespace EPocalipse.Json.Viewer
             this.imgList.Images.SetKeyName(1, "array.bmp");
             this.imgList.Images.SetKeyName(2, "prop.bmp");
             // 
-            // pnlFind
-            // 
-            this.pnlFind.Controls.Add(this.btnFindNext);
-            this.pnlFind.Controls.Add(this.btnCloseFind);
-            this.pnlFind.Controls.Add(this.txtFind);
-            this.pnlFind.Controls.Add(this.lblFind);
-            this.pnlFind.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlFind.Location = new System.Drawing.Point(0, 540);
-            this.pnlFind.Name = "pnlFind";
-            this.pnlFind.Size = new System.Drawing.Size(552, 32);
-            this.pnlFind.TabIndex = 6;
-            // 
-            // btnFindNext
-            // 
-            this.btnFindNext.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnFindNext.BackColor = System.Drawing.Color.Transparent;
-            this.btnFindNext.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFindNext.BackgroundImage")));
-            this.btnFindNext.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnFindNext.FlatAppearance.BorderSize = 0;
-            this.btnFindNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFindNext.Location = new System.Drawing.Point(503, 7);
-            this.btnFindNext.Name = "btnFindNext";
-            this.btnFindNext.Size = new System.Drawing.Size(16, 16);
-            this.btnFindNext.TabIndex = 3;
-            this.btnFindNext.Text = "Find Next";
-            this.toolTip1.SetToolTip(this.btnFindNext, "Find Next");
-            this.btnFindNext.UseVisualStyleBackColor = false;
-            this.btnFindNext.Click += new System.EventHandler(this.btnFindNext_Click);
-            // 
-            // btnCloseFind
-            // 
-            this.btnCloseFind.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCloseFind.BackColor = System.Drawing.Color.Transparent;
-            this.btnCloseFind.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCloseFind.BackgroundImage")));
-            this.btnCloseFind.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnCloseFind.FlatAppearance.BorderSize = 0;
-            this.btnCloseFind.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCloseFind.Location = new System.Drawing.Point(525, 7);
-            this.btnCloseFind.Name = "btnCloseFind";
-            this.btnCloseFind.Size = new System.Drawing.Size(16, 16);
-            this.btnCloseFind.TabIndex = 2;
-            this.btnCloseFind.Text = "Close";
-            this.toolTip1.SetToolTip(this.btnCloseFind, "Close Find");
-            this.btnCloseFind.UseVisualStyleBackColor = false;
-            this.btnCloseFind.Click += new System.EventHandler(this.btnCloseFind_Click);
-            // 
-            // txtFind
-            // 
-            this.txtFind.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtFind.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtFind.Location = new System.Drawing.Point(32, 6);
-            this.txtFind.Name = "txtFind";
-            this.txtFind.Size = new System.Drawing.Size(465, 20);
-            this.txtFind.TabIndex = 1;
-            this.txtFind.TextChanged += new System.EventHandler(this.txtFind_TextChanged);
-            this.txtFind.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtFind_KeyDown);
-            // 
-            // lblFind
-            // 
-            this.lblFind.AutoSize = true;
-            this.lblFind.Location = new System.Drawing.Point(3, 9);
-            this.lblFind.Name = "lblFind";
-            this.lblFind.Size = new System.Drawing.Size(27, 13);
-            this.lblFind.TabIndex = 0;
-            this.lblFind.Text = "&Find";
-            // 
             // pnlVisualizer
             // 
             this.pnlVisualizer.ContextMenuStrip = this.mnuVisualizerPnl;
             this.pnlVisualizer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlVisualizer.Location = new System.Drawing.Point(0, 21);
             this.pnlVisualizer.Name = "pnlVisualizer";
-            this.pnlVisualizer.Size = new System.Drawing.Size(222, 551);
+            this.pnlVisualizer.Size = new System.Drawing.Size(222, 519);
             this.pnlVisualizer.TabIndex = 6;
             // 
             // mnuVisualizerPnl
@@ -305,7 +237,7 @@ namespace EPocalipse.Json.Viewer
             this.tabControl.Location = new System.Drawing.Point(0, 0);
             this.tabControl.Name = "tabControl";
             this.tabControl.SelectedIndex = 0;
-            this.tabControl.Size = new System.Drawing.Size(792, 604);
+            this.tabControl.Size = new System.Drawing.Size(792, 572);
             this.tabControl.TabIndex = 6;
             // 
             // pageTreeView
@@ -314,7 +246,7 @@ namespace EPocalipse.Json.Viewer
             this.pageTreeView.Location = new System.Drawing.Point(4, 22);
             this.pageTreeView.Name = "pageTreeView";
             this.pageTreeView.Padding = new System.Windows.Forms.Padding(3);
-            this.pageTreeView.Size = new System.Drawing.Size(784, 578);
+            this.pageTreeView.Size = new System.Drawing.Size(784, 546);
             this.pageTreeView.TabIndex = 0;
             this.pageTreeView.Text = "Viewer";
             this.pageTreeView.UseVisualStyleBackColor = true;
@@ -327,7 +259,7 @@ namespace EPocalipse.Json.Viewer
             this.pageTextView.Location = new System.Drawing.Point(4, 22);
             this.pageTextView.Name = "pageTextView";
             this.pageTextView.Padding = new System.Windows.Forms.Padding(3);
-            this.pageTextView.Size = new System.Drawing.Size(784, 578);
+            this.pageTextView.Size = new System.Drawing.Size(784, 546);
             this.pageTextView.TabIndex = 1;
             this.pageTextView.Text = "Text";
             this.pageTextView.UseVisualStyleBackColor = true;
@@ -338,7 +270,7 @@ namespace EPocalipse.Json.Viewer
             this.txtJson.HideSelection = false;
             this.txtJson.Location = new System.Drawing.Point(3, 28);
             this.txtJson.Name = "txtJson";
-            this.txtJson.Size = new System.Drawing.Size(778, 523);
+            this.txtJson.Size = new System.Drawing.Size(778, 491);
             this.txtJson.TabIndex = 7;
             this.txtJson.Text = "";
             this.txtJson.SelectionChanged += new System.EventHandler(this.txtJson_SelectionChanged);
@@ -466,7 +398,7 @@ namespace EPocalipse.Json.Viewer
             this.lblError.ForeColor = System.Drawing.Color.Red;
             this.lblError.LinkBehavior = System.Windows.Forms.LinkBehavior.AlwaysUnderline;
             this.lblError.LinkColor = System.Drawing.Color.Red;
-            this.lblError.Location = new System.Drawing.Point(3, 551);
+            this.lblError.Location = new System.Drawing.Point(3, 519);
             this.lblError.Name = "lblError";
             this.lblError.Size = new System.Drawing.Size(778, 24);
             this.lblError.TabIndex = 5;
@@ -475,11 +407,78 @@ namespace EPocalipse.Json.Viewer
             this.lblError.VisitedLinkColor = System.Drawing.Color.Red;
             this.lblError.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblError_LinkClicked);
             // 
+            // pnlFind
+            // 
+            this.pnlFind.Controls.Add(this.btnFindNext);
+            this.pnlFind.Controls.Add(this.btnCloseFind);
+            this.pnlFind.Controls.Add(this.txtFind);
+            this.pnlFind.Controls.Add(this.lblFind);
+            this.pnlFind.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnlFind.Location = new System.Drawing.Point(0, 572);
+            this.pnlFind.Name = "pnlFind";
+            this.pnlFind.Size = new System.Drawing.Size(792, 32);
+            this.pnlFind.TabIndex = 7;
+            // 
+            // btnFindNext
+            // 
+            this.btnFindNext.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnFindNext.BackColor = System.Drawing.Color.Transparent;
+            this.btnFindNext.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnFindNext.BackgroundImage")));
+            this.btnFindNext.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnFindNext.FlatAppearance.BorderSize = 0;
+            this.btnFindNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFindNext.Location = new System.Drawing.Point(743, 7);
+            this.btnFindNext.Name = "btnFindNext";
+            this.btnFindNext.Size = new System.Drawing.Size(16, 16);
+            this.btnFindNext.TabIndex = 3;
+            this.btnFindNext.Text = "Find Next";
+            this.toolTip1.SetToolTip(this.btnFindNext, "Find Next");
+            this.btnFindNext.UseVisualStyleBackColor = false;
+            this.btnFindNext.Click += new System.EventHandler(this.btnFindNext_Click);
+            // 
+            // btnCloseFind
+            // 
+            this.btnCloseFind.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCloseFind.BackColor = System.Drawing.Color.Transparent;
+            this.btnCloseFind.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCloseFind.BackgroundImage")));
+            this.btnCloseFind.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnCloseFind.FlatAppearance.BorderSize = 0;
+            this.btnCloseFind.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCloseFind.Location = new System.Drawing.Point(765, 7);
+            this.btnCloseFind.Name = "btnCloseFind";
+            this.btnCloseFind.Size = new System.Drawing.Size(16, 16);
+            this.btnCloseFind.TabIndex = 2;
+            this.btnCloseFind.Text = "Close";
+            this.toolTip1.SetToolTip(this.btnCloseFind, "Close Find");
+            this.btnCloseFind.UseVisualStyleBackColor = false;
+            this.btnCloseFind.Click += new System.EventHandler(this.btnCloseFind_Click);
+            // 
+            // txtFind
+            // 
+            this.txtFind.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtFind.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtFind.Location = new System.Drawing.Point(32, 6);
+            this.txtFind.Name = "txtFind";
+            this.txtFind.Size = new System.Drawing.Size(705, 20);
+            this.txtFind.TabIndex = 1;
+            this.txtFind.TextChanged += new System.EventHandler(this.txtFind_TextChanged);
+            // 
+            // lblFind
+            // 
+            this.lblFind.AutoSize = true;
+            this.lblFind.Location = new System.Drawing.Point(3, 9);
+            this.lblFind.Name = "lblFind";
+            this.lblFind.Size = new System.Drawing.Size(27, 13);
+            this.lblFind.TabIndex = 0;
+            this.lblFind.Text = "&Find";
+            // 
             // JsonViewer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tabControl);
+            this.Controls.Add(this.pnlFind);
             this.Name = "JsonViewer";
             this.Size = new System.Drawing.Size(792, 604);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.JsonViewer_KeyDown);
@@ -487,8 +486,6 @@ namespace EPocalipse.Json.Viewer
             this.spcViewer.Panel2.ResumeLayout(false);
             this.spcViewer.ResumeLayout(false);
             this.mnuTree.ResumeLayout(false);
-            this.pnlFind.ResumeLayout(false);
-            this.pnlFind.PerformLayout();
             this.mnuVisualizerPnl.ResumeLayout(false);
             this.tabControl.ResumeLayout(false);
             this.pageTreeView.ResumeLayout(false);
@@ -496,6 +493,8 @@ namespace EPocalipse.Json.Viewer
             this.pageTextView.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            this.pnlFind.ResumeLayout(false);
+            this.pnlFind.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -515,10 +514,6 @@ namespace EPocalipse.Json.Viewer
         private System.Windows.Forms.ToolStripMenuItem btnStripToCurly;
         private System.Windows.Forms.ToolStripMenuItem btnStripToSqr;
         private System.Windows.Forms.Panel pnlVisualizer;
-        private System.Windows.Forms.Panel pnlFind;
-        private System.Windows.Forms.TextBox txtFind;
-        private System.Windows.Forms.Label lblFind;
-        private System.Windows.Forms.Button btnCloseFind;
         private System.Windows.Forms.ContextMenuStrip mnuTree;
         private System.Windows.Forms.ToolStripMenuItem mnuFind;
         private System.Windows.Forms.ToolStripMenuItem mnuExpandAll;
@@ -540,8 +535,12 @@ namespace EPocalipse.Json.Viewer
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.ComponentModel.BackgroundWorker backgroundWorker2;
         private System.Windows.Forms.ToolStripMenuItem mnuCopyName;
-        private System.Windows.Forms.Button btnFindNext;
         private System.Windows.Forms.ToolTip toolTip1;
+        private System.Windows.Forms.Panel pnlFind;
+        private System.Windows.Forms.Button btnFindNext;
+        private System.Windows.Forms.Button btnCloseFind;
+        private System.Windows.Forms.TextBox txtFind;
+        private System.Windows.Forms.Label lblFind;
 
     }
 }

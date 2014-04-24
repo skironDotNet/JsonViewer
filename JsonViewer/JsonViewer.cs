@@ -220,8 +220,28 @@ namespace EPocalipse.Json.Viewer
 
         private void txtFind_TextChanged(object sender, EventArgs e)
         {
+            SearchForText(false);
+        }
+
+        int searchResult = -1;
+
+        private void FindNextInText(bool findNext)
+        {
             txtFind.BackColor = SystemColors.Window;
-            FindNext(true, true);
+            if (txtFind.Text.Length == 0)
+                return;
+
+            if (findNext && searchResult > -1)
+            {
+                searchResult = txtJson.Find(txtFind.Text, searchResult + txtFind.Text.Length, RichTextBoxFinds.None);
+            }
+            else
+            {
+                searchResult = txtJson.Find(txtFind.Text);
+                if (searchResult == -1)
+                    txtFind.BackColor = Color.LightCoral;
+            }
+
         }
 
         public bool FindNext(bool includeSelected)
@@ -231,6 +251,8 @@ namespace EPocalipse.Json.Viewer
 
         public void FindNext(bool includeSelected, bool fromUI)
         {
+            txtFind.BackColor = SystemColors.Window;
+
             if (!FindNext(includeSelected) && fromUI)
                 txtFind.BackColor = Color.LightCoral;
         }
@@ -687,7 +709,20 @@ namespace EPocalipse.Json.Viewer
 
         private void btnFindNext_Click(object sender, EventArgs e)
         {
-            FindNext(false, true);
+            SearchForText(true);
+        }
+
+        private void SearchForText(bool findNext)
+        {
+            switch (tabControl.SelectedTab.Name)
+            {
+                case "pageTreeView":
+                    FindNext(!findNext, true);
+                    break;
+                case "pageTextView":
+                    FindNextInText(findNext);
+                    break;
+            }
         }
     }
 
