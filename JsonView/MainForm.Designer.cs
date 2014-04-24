@@ -271,6 +271,7 @@ namespace EPocalipse.Json.JsonView
             this.ClientSize = new System.Drawing.Size(833, 566);
             this.Controls.Add(this.JsonViewer);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "MainForm";
             this.Text = "JSON Viewer";
