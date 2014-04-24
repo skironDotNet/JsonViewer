@@ -75,7 +75,7 @@ namespace EPocalipse.Json.JsonView
             this.toolStripSeparator1,
             this.exitToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(35, 20);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
             // 
             // openToolStripMenuItem
@@ -86,21 +86,21 @@ namespace EPocalipse.Json.JsonView
             this.openToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Fuchsia;
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
             this.openToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.openToolStripMenuItem.Text = "Open";
             this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(137, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(143, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("exitToolStripMenuItem.Image")));
             this.exitToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Fuchsia;
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(140, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -116,7 +116,7 @@ namespace EPocalipse.Json.JsonView
             this.toolStripSeparator3,
             this.selectAllToolStripMenuItem});
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
-            this.editToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
             this.editToolStripMenuItem.Text = "Edit";
             // 
             // undoToolStripMenuItem
@@ -125,14 +125,14 @@ namespace EPocalipse.Json.JsonView
             this.undoToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Fuchsia;
             this.undoToolStripMenuItem.Name = "undoToolStripMenuItem";
             this.undoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
-            this.undoToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.undoToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
             this.undoToolStripMenuItem.Text = "Undo";
             this.undoToolStripMenuItem.Click += new System.EventHandler(this.undoToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(153, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(161, 6);
             // 
             // cutToolStripMenuItem
             // 
@@ -140,7 +140,7 @@ namespace EPocalipse.Json.JsonView
             this.cutToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Fuchsia;
             this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
             this.cutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
-            this.cutToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.cutToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
             this.cutToolStripMenuItem.Text = "Cut";
             this.cutToolStripMenuItem.Click += new System.EventHandler(this.cutToolStripMenuItem_Click);
             // 
@@ -150,7 +150,7 @@ namespace EPocalipse.Json.JsonView
             this.copyToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Fuchsia;
             this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
             this.copyToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.C)));
-            this.copyToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.copyToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
             this.copyToolStripMenuItem.Text = "Copy";
             this.copyToolStripMenuItem.Click += new System.EventHandler(this.copyToolStripMenuItem_Click);
             // 
@@ -160,7 +160,7 @@ namespace EPocalipse.Json.JsonView
             this.pasteToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Fuchsia;
             this.pasteToolStripMenuItem.Name = "pasteToolStripMenuItem";
             this.pasteToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.V)));
-            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.pasteToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
             this.pasteToolStripMenuItem.Text = "Paste";
             this.pasteToolStripMenuItem.Click += new System.EventHandler(this.pasteToolStripMenuItem_Click);
             // 
@@ -169,20 +169,20 @@ namespace EPocalipse.Json.JsonView
             this.deleteToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("deleteToolStripMenuItem.Image")));
             this.deleteToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Fuchsia;
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
             this.deleteToolStripMenuItem.Text = "Delete";
             this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(153, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(161, 6);
             // 
             // selectAllToolStripMenuItem
             // 
             this.selectAllToolStripMenuItem.Name = "selectAllToolStripMenuItem";
             this.selectAllToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
-            this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(156, 22);
+            this.selectAllToolStripMenuItem.Size = new System.Drawing.Size(164, 22);
             this.selectAllToolStripMenuItem.Text = "Select All";
             this.selectAllToolStripMenuItem.Click += new System.EventHandler(this.selectAllToolStripMenuItem_Click);
             // 
@@ -195,7 +195,7 @@ namespace EPocalipse.Json.JsonView
             this.copyToolStripMenuItem1,
             this.copyValueToolStripMenuItem});
             this.viewerToolStripMenuItem.Name = "viewerToolStripMenuItem";
-            this.viewerToolStripMenuItem.Size = new System.Drawing.Size(51, 20);
+            this.viewerToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
             this.viewerToolStripMenuItem.Text = "Viewer";
             // 
             // findToolStripMenuItem
@@ -204,7 +204,7 @@ namespace EPocalipse.Json.JsonView
             this.findToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Fuchsia;
             this.findToolStripMenuItem.Name = "findToolStripMenuItem";
             this.findToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F)));
-            this.findToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.findToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             this.findToolStripMenuItem.Text = "Find";
             this.findToolStripMenuItem.Click += new System.EventHandler(this.findToolStripMenuItem_Click);
             // 
@@ -213,28 +213,28 @@ namespace EPocalipse.Json.JsonView
             this.expandAllToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("expandAllToolStripMenuItem.Image")));
             this.expandAllToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Fuchsia;
             this.expandAllToolStripMenuItem.Name = "expandAllToolStripMenuItem";
-            this.expandAllToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.expandAllToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             this.expandAllToolStripMenuItem.Text = "Expand All";
             this.expandAllToolStripMenuItem.Click += new System.EventHandler(this.expandAllToolStripMenuItem_Click);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(129, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(134, 6);
             // 
             // copyToolStripMenuItem1
             // 
             this.copyToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("copyToolStripMenuItem1.Image")));
             this.copyToolStripMenuItem1.ImageTransparentColor = System.Drawing.Color.Fuchsia;
             this.copyToolStripMenuItem1.Name = "copyToolStripMenuItem1";
-            this.copyToolStripMenuItem1.Size = new System.Drawing.Size(132, 22);
+            this.copyToolStripMenuItem1.Size = new System.Drawing.Size(137, 22);
             this.copyToolStripMenuItem1.Text = "Copy";
             this.copyToolStripMenuItem1.Click += new System.EventHandler(this.copyToolStripMenuItem1_Click);
             // 
             // copyValueToolStripMenuItem
             // 
             this.copyValueToolStripMenuItem.Name = "copyValueToolStripMenuItem";
-            this.copyValueToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.copyValueToolStripMenuItem.Size = new System.Drawing.Size(137, 22);
             this.copyValueToolStripMenuItem.Text = "Copy Value";
             this.copyValueToolStripMenuItem.Click += new System.EventHandler(this.copyValueToolStripMenuItem_Click);
             // 
@@ -243,7 +243,7 @@ namespace EPocalipse.Json.JsonView
             this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.aboutJSONViewerToolStripMenuItem});
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
-            this.helpToolStripMenuItem.Size = new System.Drawing.Size(40, 20);
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.helpToolStripMenuItem.Text = "Help";
             // 
             // aboutJSONViewerToolStripMenuItem
@@ -251,19 +251,17 @@ namespace EPocalipse.Json.JsonView
             this.aboutJSONViewerToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("aboutJSONViewerToolStripMenuItem.Image")));
             this.aboutJSONViewerToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Fuchsia;
             this.aboutJSONViewerToolStripMenuItem.Name = "aboutJSONViewerToolStripMenuItem";
-            this.aboutJSONViewerToolStripMenuItem.Size = new System.Drawing.Size(167, 22);
+            this.aboutJSONViewerToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
             this.aboutJSONViewerToolStripMenuItem.Text = "About JSON Viewer";
             this.aboutJSONViewerToolStripMenuItem.Click += new System.EventHandler(this.aboutJSONViewerToolStripMenuItem_Click);
             // 
             // JsonViewer
             // 
-            this.JsonViewer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.JsonViewer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.JsonViewer.Json = "";
-            this.JsonViewer.Location = new System.Drawing.Point(0, 27);
+            this.JsonViewer.Location = new System.Drawing.Point(0, 24);
             this.JsonViewer.Name = "JsonViewer";
-            this.JsonViewer.Size = new System.Drawing.Size(833, 527);
+            this.JsonViewer.Size = new System.Drawing.Size(833, 542);
             this.JsonViewer.TabIndex = 0;
             // 
             // MainForm
